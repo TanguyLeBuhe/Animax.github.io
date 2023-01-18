@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>CinéActu</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <button class="mainmenubtn">FORUM</button>
+    </div>
+    <div class="navbar">
+        <button class="mainmenubtn">FILMS</button>
+        <div class="navbar-child">
+            <a href="/film/action/action.html">Action</a>
+            <a href="/film/animation/animation.html">Animation</a>
+            <a href="/film/aventure/aventure.html">Aventure</a>
+            <a href="/film/comedie/comedie.html">Comédie</a>
+            <a href="/film/drame/drame.html">Drame</a>
+            <a href="/film/fantastique/fantastique.html">Fantastique</a>
+            <a href="/film/thriller/thriller.html">Thriller</a>
+        </div>
+    </div>
+    <div class="mid">
+        <a><img width="70px" src="/image/Logo.jpg"></a>
+    </div>  
+
+    <!--Page qui tourne-->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <a href="/films/avt2.html"><img src="https://fr.web.img4.acsta.net/pictures/22/11/02/14/49/4565071.jpg" alt="" style="width: 100%;"></a>
+</div>
+<div class="mySlides fade">
+    <a href="/film/action/spdnwh.html"><img src="https://fr.web.img4.acsta.net/pictures/21/11/16/10/01/4860598.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+    <a href="/film/comedie/cp2.html"><img src="https://images.cinefil.com/movies/1122954.webp" style="width:100%">
+</div>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<!--Script de changement automatique d'image-->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+}
+</script>
+<!--Bas de page-->
+        <hr class="rounded">
+        <h1 class="trending">
+            | TENDANCES
+        </h1>
+        <hr class="rounded">
+        <div class="row">
+            <!--Ligne 1-->
+            <div class="column">
+                <a href="/film/action/avt2.html"><img src="https://fr.web.img4.acsta.net/pictures/22/11/02/14/49/4565071.jpg" alt="" style = "width: 95%;"></a>
+                <div class="name">AVATAR : LA VOIE DE L'EAU</div>
+            </div>
+            <div class="column">
+                <a href="/film/action/spdnwh.html"><img src="https://fr.web.img4.acsta.net/pictures/21/11/16/10/01/4860598.jpg" alt="" style = "width: 100%;"height="285"></a>
+                <div class="name">SPIDER-MAN: NO WAY HOME</div>
+            </div>
+            <div class="column">
+                <a href="/film/comedie/cp2.html"><img src="https://images.cinefil.com/movies/1122954.webp" alt="" style = "width: 100%;"height="285"></a>
+                <div class="name">LE CHAT POTTÉ 2 : LA DERNIÈRE QUÊTE</div>
+            </div>
+            
+            <div class="column">
+                <a href="/film/action/aeg.html"><img src="https://fr.web.img2.acsta.net/pictures/19/04/04/09/04/0472053.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Avengers: Endgame</div>
+            </div>
+            <div class="column">
+                <a href="/film/comedie/ts4.html"><img src="https://fr.web.img3.acsta.net/pictures/19/06/12/17/42/4485647.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Toy Story 4</div>
+            </div>
+            <div class="column">
+                <a href="/film/action/venom.html"><img src="https://fr.web.img2.acsta.net/pictures/21/09/01/11/19/0900123.jpg" alt="" style = "width: 100%;" height="285"></a>
+                <div class="name">Venom</div>
+            </div>
+
+            <div class="column">
+                <a href="/film/animation/tsds.html"><img src="https://m.media-amazon.com/images/M/MV5BODIwNzk5YTAtNDNjZS00YzdmLWI3YzMtZTIwNTljZjcxOGY5XkEyXkFqcGdeQXVyOTYzOTg3MTY@._V1_.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Seven Deadly Sins to the Sky Temple</div>
+            </div>
+            <div class="column">
+                <a href="/film/fantastique/tmask.html"><img src="https://m.media-amazon.com/images/M/MV5BOWExYjI5MzktNTRhNi00Nzg2LThkZmQtYWVkYjRlYWI2MDQ4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="" style = "width: 95%;"></a>
+                <div class="name">The Mask</div>
+            </div>
+            <div class="column">
+                <a href="/film/animation/narutotl.html"><img src="https://m.media-amazon.com/images/I/81dapfMrcKL._AC_SL1500_.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Naruto The Last</div>
+            </div>
+
+            <!--Ligne 2-->
+            <div class="column">
+                <a href="/film/aventure/sw9.html"><img src="https://fr.web.img6.acsta.net/pictures/20/10/02/12/21/3764004.png" alt="" style = "width: 100%;"></a>
+                <div class="name">Star Wars: The Rise of Skywalker</div>
+            </div>
+            <div class="column">
+                <a href="/film/triller/tguilty.html"><img src="https://fr.web.img6.acsta.net/pictures/21/08/31/11/07/4346618.jpg" alt="" style = "width: 100%;"height="280"></a>
+                <div class="name">The Guilty</div>
+            </div>
+            <div class="column">
+                <a href="/film/animation/spmitsv.html"><img src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg" alt="" style = "width: 100%;"height="285"></a>
+                <div class="name">Spider-Man: Into the Spider-Verse</div>
+            </div>
+            
+            <div class="column">
+                <a href="/film/animation/shrek3.html"><img src="https://fr.web.img5.acsta.net/medias/nmedia/18/63/15/86/18767239.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Shrek the Third</div>
+            </div>
+            <div class="column">
+                <a href="/film/action/shazam!.html"><img src="https://fr.web.img4.acsta.net/pictures/19/03/11/16/43/1722757.jpg" alt="" style = "width: 100%;"></a>
+                <div class="name">Shazam!</div>
+            </div>
+            <div class="column">
+                <a href="/film/drame/schumi.html"><img src="https://images.caradisiac.com/logos/7/9/4/5/267945/S0-un-documentaire-a-venir-sur-michael-schumacher-191646.jpg" alt="" style = "width: 100%;" height="285"></a>
+                <div class="name">Schumacher</div>
+            </div>
+
+            <div class="column">
+                <a href="/film/drame/rej.html"><img src="https://fr.web.img5.acsta.net/pictures/210/228/21022842_20130726105754415.jpg" alt="" style = "width: 100%;" height="285"></a>
+                <div class="name">Roméro et Juliette</div>
+            </div>
+            <div class="column">
+                <a href="/film/comedie/Rebelle.html"><img src="https://fr.web.img6.acsta.net/medias/nmedia/18/84/94/35/20186089.jpg" alt="" style = "width: 95%;"height="285"></a>
+                <div class="name">Rebelle</div>
+            </div>
+            <div class="column">
+                <a href="/film/fantastique/pdc.html"><img src="https://fr.web.img4.acsta.net/medias/nmedia/18/35/07/46/affiche2.jpg" alt="" style = "width: 100%;"height="285"></a>
+                <div class="name">Pirates des Caraïbes</div>
+            </div>
+</body>
+</html>

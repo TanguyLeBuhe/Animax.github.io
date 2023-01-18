@@ -1,0 +1,165 @@
+/**Corp du site**/
+body{
+  background-color: #111;
+  padding-left: 0px;
+}
+
+/**HEADER**/
+.mainmenubtn {
+  background-color: #cb6be6;
+  color: white;
+  border-radius: 58px;
+  border: none;
+  cursor: pointer;
+  padding:15px;
+  margin: top 0px;
+}
+.mainmenubtn:hover {
+  background-color: #111;
+}
+.navbar {
+  display:auto;
+  padding: 8px;
+  background-color: transparent;
+  float: right;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-child {
+  display: none;
+  background-color: white;
+  min-width: 200px;
+}
+
+.mid{
+  align-items: center;
+  text-align: center;
+  margin-left: 250px;
+}
+.navbar-child a {
+  border-radius: 58px;
+  color: #cb6be6;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+.navbar-child a:hover {
+  border-radius: 58px;
+  color: #cb6be6;
+  background-color: #111;
+  padding: 15px;
+}
+.navbar:hover .navbar-child {
+  border-radius: 25px;
+  display: block;
+  font-display: flex;
+  
+}
+
+/**Ensemble Film**/
+.reading-content{
+  text-align:center;
+}
+.name {
+  font-size: 75px;
+  position: absolute;
+  width: 50%;
+  text-shadow: 2px 0 0  #111,0 2px 0 #cb6be6,0 0 2px #111;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+.trending{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+
+}
+.column{
+  overflow:auto;
+  float: left;
+  width : 200;
+  height : 295px;
+  max-width : 200px;
+  max-height : 295px;
+  display: flex;
+}
+
+.column:hover a{
+  background-color: #cb6be6;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.name {
+  color: white;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-shadow: 2px 0 0  #111,0 2px 0 #cb6be6,0 0 2px #111;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+/**Navigation Qui change**/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  padding: 5px;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  text-shadow: 2px 0 0  #111,0 2px 0 #cb6be6,0 0 2px #111;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -23px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cb6be6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
